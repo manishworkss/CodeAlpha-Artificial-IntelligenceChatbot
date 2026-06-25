@@ -1,6 +1,12 @@
 # AI Chatbot — CodeAlpha Internship Project
 
-![IntelliBot Pro Showcase Preview](assets/showcase_preview.png)
+## 📸 Executive Project Showcase Gallery
+
+| 🌐 Enterprise Web Showcase | 💬 Desktop GUI & Live Chat Delivery |
+| :---: | :---: |
+| ![Web Showcase Preview](assets/showcase_preview.png) | ![Desktop Chat GUI](assets/chatbot_gui_preview.png) |
+| **🧮 Native Calculus & Algebra Solver** | **💻 Code Assistant & Multi-Language Subsystem** |
+| ![Math Solver Engine](assets/math_engine_preview.png) | ![Code & Localization](assets/code_assistant_preview.png) |
 
 ## Overview
 
@@ -17,8 +23,6 @@ An advanced, Java-powered AI Chatbot featuring an executive GUI and NLP-driven i
 - **Zero-Dependency Portability** — 100% standalone Java 21 LTS native architecture requiring zero external JARs
 
 ## Desktop GUI & Conversation Walkthrough
-
-![IntelliBot Pro Desktop GUI & Chat Delivery](assets/chatbot_gui_preview.png)
 
 ### 💬 Live Chat Delivery Examples
 
