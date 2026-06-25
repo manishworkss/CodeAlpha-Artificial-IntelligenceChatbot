@@ -1,28 +1,28 @@
 # AI Chatbot — CodeAlpha Internship Project
 
+![IntelliBot Pro Showcase Preview](assets/showcase_preview.png)
+
 ## Overview
 
-A advanced, Java-powered AI Chatbot featuring a professional GUI and NLP-driven intelligence. Built as part of the CodeAlpha internship, this project demonstrates intelligent conversation, programming assistance, and mathematical capabilities.
+An advanced, Java-powered AI Chatbot featuring an executive GUI and NLP-driven intelligence. Built as part of the CodeAlpha internship, this project demonstrates intelligent conversation, programming assistance, algebraic calculus solving, and multi-language localization.
 
 ## Key Features
 
-- **Professional GUI** — Modern Swing-based interface with animated message display and responsive design
+- **Professional GUI** — Modern Swing-based executive interface with animated message display and responsive design
 - **Natural Language Understanding** — Intent-based routing for greetings, farewells, queries, and system commands
-- **Programming Assistance** — Real-time code generation, syntax validation, and best-practice explanations
-- **Math Solver** — Advanced mathematical expression evaluator with support for calculus, algebra, and statistics
+- **Programming Assistance** — Real-time Java 21 code generation templates and best-practice explanations
+- **Native Math & Calculus Solver** — Built-in algebraic linear equation evaluation (`2x + 5 = 15`) and derivative solver (`x^2`)
 - **Context Awareness** — Short-term memory for multi-turn conversations and logical follow-up questions
-- **Multi-Language Support** — Built-in translations for English, Hindi, Spanish, and French
-- **Real-Time Processing** — Fast text processing using Jsoup (HTML parsing) and MathParser (mathematical evaluation)
+- **Multi-Language Support** — Stateful dynamic localization for English, Hindi, Spanish, and French
+- **Zero-Dependency Portability** — 100% standalone Java 21 LTS native architecture requiring zero external JARs
 
 ## Technical Highlights
 
 ### Tech Stack
-- **Language**: Java 21
-- **GUI Framework**: Swing + JavaFX (WebPanel integration)
-- **NLP Engine**: Rule-based intent classification with pattern matching
-- **External Libraries**:
-  - `Jsoup` — HTML parsing and text extraction
-  - `MathParser.org` — Mathematical expression evaluation
+- **Language**: Java 21 LTS
+- **GUI Framework**: Java Swing (Desktop GUI) + Enterprise Web Showcase (`index.html`)
+- **NLP & Math Engine**: Native rule-based intent classification and algebraic regex evaluation (`java.util.regex`)
+- **Dependencies**: None (Zero external dependency management required)
 
 ### Architecture
 - **Model-View-Controller (MVC)** pattern for clean separation of concerns
