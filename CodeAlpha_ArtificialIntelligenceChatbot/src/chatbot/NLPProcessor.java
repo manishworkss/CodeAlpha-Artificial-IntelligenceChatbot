@@ -85,6 +85,21 @@ public class NLPProcessor {
             return "casual";
         }
 
+        // Language Switch
+        if (lowerInput.contains("change language") || lowerInput.contains("switch language") || lowerInput.contains("translate")) {
+            return "language_switch";
+        }
+
+        // System Commands
+        if (lowerInput.contains("reset chat") || lowerInput.contains("clear chat") || lowerInput.contains("show settings")) {
+            return "system_command";
+        }
+
+        // Math / Calculus
+        if (lowerInput.contains("solve") || lowerInput.contains("derivative") || lowerInput.contains("algebra")) {
+            return "math_solve";
+        }
+
         return "general";
     }
 

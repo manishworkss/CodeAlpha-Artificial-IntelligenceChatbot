@@ -139,6 +139,67 @@ public class KnowledgeBase {
                         "- Better Code Organization\n\n" +
                         "Would you like detailed examples of any specific OOP concept?"
         );
+
+        detailedAnswers.put("reverse",
+                "JAVA PROGRAMMING ASSISTANT — STRING REVERSAL:\n\n" +
+                        "Here is a complete, clean Java program to reverse a string:\n\n" +
+                        "public class StringReverser {\n" +
+                        "    public static void main(String[] args) {\n" +
+                        "        String original = \"IntelliBot Pro\";\n" +
+                        "        StringBuilder reversed = new StringBuilder(original).reverse();\n\n" +
+                        "        System.out.println(\"Original: \" + original);\n" +
+                        "        System.out.println(\"Reversed: \" + reversed.toString());\n" +
+                        "    }\n" +
+                        "}\n\n" +
+                        "Time Complexity: O(n) | Space Complexity: O(n)\n" +
+                        "Tip: Using StringBuilder.reverse() is the most optimized approach in Java!"
+        );
+
+        detailedAnswers.put("recursion",
+                "JAVA CONCEPT EXPLANATION — RECURSION:\n\n" +
+                        "Recursion occurs when a method calls itself to solve smaller instances of the same problem.\n\n" +
+                        "Example: Factorial Calculation (5! = 5 * 4 * 3 * 2 * 1)\n\n" +
+                        "public class RecursionExample {\n" +
+                        "    public static int factorial(int n) {\n" +
+                        "        if (n <= 1) return 1; // Base case\n" +
+                        "        return n * factorial(n - 1); // Recursive call\n" +
+                        "    }\n\n" +
+                        "    public static void main(String[] args) {\n" +
+                        "        System.out.println(\"Factorial of 5 is: \" + factorial(5));\n" +
+                        "    }\n" +
+                        "}\n\n" +
+                        "Always ensure a valid Base Case to prevent StackOverflowError!"
+        );
+
+        detailedAnswers.put("fibonacci",
+                "JAVA PROGRAMMING ASSISTANT — FIBONACCI SERIES:\n\n" +
+                        "public class Fibonacci {\n" +
+                        "    public static void main(String[] args) {\n" +
+                        "        int n = 10, first = 0, second = 1;\n" +
+                        "        System.out.print(\"Fibonacci Series: \" + first + \", \" + second);\n\n" +
+                        "        for (int i = 2; i < n; i++) {\n" +
+                        "            int next = first + second;\n" +
+                        "            System.out.print(\", \" + next);\n" +
+                        "            first = second;\n" +
+                        "            second = next;\n" +
+                        "        }\n" +
+                        "    }\n" +
+                        "}"
+        );
+
+        detailedAnswers.put("palindrome",
+                "JAVA PROGRAMMING ASSISTANT — PALINDROME CHECK:\n\n" +
+                        "public class PalindromeCheck {\n" +
+                        "    public static boolean isPalindrome(String str) {\n" +
+                        "        String clean = str.replaceAll(\"[^a-zA-Z0-9]\", \"\").toLowerCase();\n" +
+                        "        String rev = new StringBuilder(clean).reverse().toString();\n" +
+                        "        return clean.equals(rev);\n" +
+                        "    }\n\n" +
+                        "    public static void main(String[] args) {\n" +
+                        "        System.out.println(\"Is 'Radar' palindrome? \" + isPalindrome(\"Radar\"));\n" +
+                        "    }\n" +
+                        "}"
+        );
     }
 
     public String getResponse(String intent, String originalInput) {

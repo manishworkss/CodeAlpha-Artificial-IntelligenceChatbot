@@ -20,13 +20,13 @@ public class ChatbotGUI extends JFrame {
     private KnowledgeBase knowledgeBase;
     private ConversationEngine conversationEngine;
 
-    // Professional Colors
-    private final Color HEADER_COLOR = new Color(52, 73, 94);
-    private final Color BUTTON_COLOR = new Color(74, 144, 226);
-    private final Color SUCCESS_COLOR = new Color(46, 204, 113);
-    private final Color CLEAR_COLOR = new Color(231, 76, 60);
-    private final Color BACKGROUND_COLOR = new Color(240, 242, 245);
-    private final Color TEXT_COLOR = new Color(50, 50, 50);
+    // Curated Executive Corporate Palette
+    private final Color HEADER_COLOR = new Color(15, 23, 42);       // #0f172a Deep Obsidian Navy
+    private final Color BUTTON_COLOR = new Color(37, 99, 235);      // #2563eb Corporate Sapphire Blue
+    private final Color SUCCESS_COLOR = new Color(16, 185, 129);    // #10b981 Crisp Emerald Accent
+    private final Color CLEAR_COLOR = new Color(225, 29, 72);       // #e11d48 Refined Crimson
+    private final Color BACKGROUND_COLOR = new Color(248, 250, 252);// #f8fafc Soft Executive Slate
+    private final Color TEXT_COLOR = new Color(30, 41, 59);         // #1e293b Sharp Slate Charcoal
 
     public ChatbotGUI() {
         nlpProcessor = new NLPProcessor();
@@ -289,7 +289,13 @@ public class ChatbotGUI extends JFrame {
             protected void done() {
                 try {
                     String botResponse = get();
-                    appendMessage("INTELLIBOT PRO", botResponse);
+                    if ("SYSTEM_COMMAND:RESET_CHAT".equals(botResponse)) {
+                        chatArea.setText("");
+                        addWelcomeMessage();
+                        statusLabel.setText("Chat history reset via system command");
+                    } else {
+                        appendMessage("INTELLIBOT PRO", botResponse);
+                    }
                 } catch (Exception e) {
                     appendMessage("INTELLIBOT PRO",
                             "Sorry, I encountered an error processing your request. Please try again!");
