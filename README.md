@@ -1,7 +1,5 @@
 # AI Chatbot — CodeAlpha Internship Project
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmanishworkss%2FCodeAlpha-Artificial-IntelligenceChatbot)
-
 ## 📸 Executive Project Showcase Gallery
 
 | 🌐 Enterprise Web Showcase | 💬 Desktop GUI & Live Chat Delivery |
