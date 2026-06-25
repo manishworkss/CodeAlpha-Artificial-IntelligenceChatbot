@@ -16,6 +16,42 @@ An advanced, Java-powered AI Chatbot featuring an executive GUI and NLP-driven i
 - **Multi-Language Support** — Stateful dynamic localization for English, Hindi, Spanish, and French
 - **Zero-Dependency Portability** — 100% standalone Java 21 LTS native architecture requiring zero external JARs
 
+## Desktop GUI & Conversation Walkthrough
+
+![IntelliBot Pro Desktop GUI & Chat Delivery](assets/chatbot_gui_preview.png)
+
+### 💬 Live Chat Delivery Examples
+
+Here is how IntelliBot Pro parses user input and delivers structured conversation responses:
+
+#### 1. Algebraic Linear Equation Solver
+**User:** `solve for x: 2x + 5 = 15`  
+**IntelliBot Pro:**  
+> **🧮 ALGEBRA SOLVER (Linear Equation):**  
+> Equation: `2x + 5 = 15`  
+> • Step 1: Isolate variable term ➔ `2x = 15 - 5`  
+> • Step 2: Divide by coefficient ➔ `x = 10 / 2`  
+> ★★ **Answer: x = 5** ★★
+
+#### 2. Real-Time Algorithmic Code Generation
+**User:** `write a java program to reverse a string`  
+**IntelliBot Pro:**  
+> **💻 JAVA PROGRAMMING ASSISTANT — STRING REVERSAL:**
+> ```java
+> public class StringReverser {
+>     public static void main(String[] args) {
+>         String s = "IntelliBot";
+>         String rev = new StringBuilder(s).reverse().toString();
+>         System.out.println(rev);
+>     }
+> }
+> ```
+
+#### 3. Stateful Multi-Language Localization
+**User:** `Change language to Hindi`  
+**IntelliBot Pro:**  
+> भाषा बदलकर हिंदी कर दी गई है! अब आप हिंदी में सवाल पूछ सकते हैं।
+
 ## Technical Highlights
 
 ### Tech Stack
